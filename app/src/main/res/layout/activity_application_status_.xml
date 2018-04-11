@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="info.srinivas.com.driverregistration.ApplicationStatus_Activity">
+
+
+    <include
+        layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_footer"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+       >
+
+    <LinearLayout
+        android:id="@+id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_allside"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/driver_applicaton_Status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/heading_text_size"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_editlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_Top"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_Top"
+                android:weightSum="1">
+
+                <RadioGroup
+                    android:id="@+id/rg_edityesno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/rd_editDl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Licence Number"
+                        android:textSize="@dimen/margin_textsize_14dp"
+                        android:layout_weight="0.5"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_editappID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Application ID"
+                        android:textSize="@dimen/margin_textsize_14dp"
+                        android:layout_weight="0.5"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_Top"
+                android:gravity="center"
+                android:padding="@dimen/padding_allside"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/edit_dl_number"
+                    style="@style/edt_custom_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_weight="0.4"
+                    android:drawable="@drawable/edittextstyle"
+                    android:hint="@string/enter_driver_licence_no"
+                    android:inputType="textCapCharacters"
+                    android:textSize="@dimen/margin_textsize_14dp" />
+
+                <Button
+                    android:id="@+id/get_details_btn"
+                    style="@style/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="@string/get_details"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="@dimen/margin_Top"
+                    android:textSize="@dimen/margin_textsize_14dp" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+        <!-- DL_CARD_START -->
+        <LinearLayout
+            android:id="@+id/rl_licences_rtadetails_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_licence_header_spotchallan_xml"
+            android:layout_marginTop="@dimen/margin_view"
+            android:background="@drawable/ll_style"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/rc_images"
+                    android:layout_width="@dimen/margin_cyblog_with"
+                    android:layout_height="@dimen/margin_cyblog_hight"
+                    android:layout_marginTop="@dimen/margin_Top"
+                    android:contentDescription="@null"
+                    android:src="@drawable/exit_logo" />
+
+                <LinearLayout
+                    android:id="@+id/rc_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/margin_card_height"
+                    android:layout_marginBottom="@dimen/margin_Top"
+                    android:layout_marginLeft="@dimen/margin_Top"
+                    android:layout_marginRight="@dimen/margin_Top"
+                    android:layout_marginTop="@dimen/margin_Top"
+                    android:background="@drawable/layout_style"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/rc_details"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/margin_10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tsp"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/margin_10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="@dimen/margin_view"
+                android:layout_marginRight="@dimen/margin_view"
+                android:layout_marginTop="@dimen/margin_Top_view"
+                android:background="#c10101" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dl_no_spotchallan_xml"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/driving_licencse_no"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/margin_textsize"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_Top"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_Top"
+                        android:layout_marginEnd="@dimen/margin_allside"
+                        android:layout_marginLeft="@dimen/margin_allside"
+                        android:layout_marginRight="@dimen/margin_allside"
+                        android:layout_marginStart="@dimen/margin_allside"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvlcnceownername_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_allside"
+                            android:layout_weight="0.5"
+                            android:text="Owner name"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp" />
+
+                        <TextView
+                            android:id="@+id/tvlcnce_fname_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Owner Father Name"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal" />
+
+
+                        <TextView
+                            android:id="@+id/tvdob_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Date oF Birth"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal" />
+
+
+
+                        <TextView
+                            android:id="@+id/tvcontactNo1_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="contactNo1"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvmail_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="e-Mail ID"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_Address_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Address"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_city_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="City"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_statesname_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="States Name"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_pincode_spotchallan_xml"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Pin Code"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal" />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="0.4"
+                        android:padding="3dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgv_licence_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/empty_profile_img"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="contactNo"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+
+                        <TextView
+                            android:id="@+id/tvcontactNo_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="contactNo"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Aadhar Number"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+                        <TextView
+                            android:id="@+id/tvaadhra_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Aadhar Number"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="5dp"
+                            android:text="Center Name"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_centerName_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Center Name"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_slotdt_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="ID Proof"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_addressCd_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="ID Proof Number"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_addressDet_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_StickerStus_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Status"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_StickerValidity_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_Sticker_valid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Sticker Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_RegnNo_spotchallan_xml"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_Sticker_regNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Sticker RegNo"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="bold"
+                            android:text=":"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_lcnce_Sticker_regNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_Top"
+                            android:layout_marginRight="@dimen/margin_Top"
+                            android:layout_marginTop="@dimen/margin_view"
+                            android:text="Slot Date"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/margin_textsize_14dp"
+                            android:textStyle="normal"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- sign layout -->
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- DL_CARD_END -->
+
+        </LinearLayout>
+
+     </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

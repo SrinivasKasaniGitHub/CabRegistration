@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">DriverRegistration</string>
+    <string name="comp_mtpv">Powered By : MOTHER TECHNOLOGIES PROJECT VENTURES</string>
+    <string name="driver_application_form">Registration Form </string>
+    <string name="driver_application_edit">Edit Application Form  </string>
+    <string name="driver_applicaton_Status"> Application  Status  </string>
+    <string name="driver_application_pending">Help </string>
+    <string name="driver_application_status">Status </string>
+    <string name="driver_details">Driver Details</string>
+    <string name="rc_details">REGISTRATION OF CERTIFICATE DETAILS</string>
+    <string name="tsp">TELANGANA STATE POLICE</string>
+    <string name="enter_driver_licence_no">Enter Driving Licence </string>
+    <string name="enter_app_idNo">Enter Application Number</string>
+    <string name="driving_lic_num">Driving Licence No</string>
+    <string name="date_of_birth">Select Date of Birth</string>
+    <string name="get_details">Get Details</string>
+    <string name="get_details_edit">Edit Details </string>
+    <string name="enter_driver_name">Enter Driver Name</string>
+    <string name="enter_father_name">Enter Father Name</string>
+    <string name="address">Enter Address</string>
+    <string name="driving_licencse_no">Driving License No.</string>
+    <string name="enter_door_number">Enter Door Number</string>
+    <string name="licence_validity">Licence Validity</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_street_number">Enter Street Number</string>
+    <string name="select_city">Enter City Name</string>
+    <string name="enter_pincode">Enter Pincode</string>
+    <string name="select_state">Select State</string>
+    <string name="txt_state">Select State</string>
+    <string name="txt_pin">Enter Pin Code</string>
+    <string name="app_id">Application ID</string>
+    <string name="txt_aadhar">Aadhaar Number </string>
+    <string name="enter_aadhra">Enter Aadhaar Number</string>
+    <string name="please">Please Select any One</string>
+    <string name="contact_details">Contact Details :</string>
+    <string name="person_details">Personal Information :</string>
+    <string name="enter_mobile_no">Enter Mobile No</string>
+    <string name="alternate_mobile_number">Alternate Mobile No</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="select_slot_booking_center">Select Slot Booking Center</string>
+    <string name="select_booking_time">Select Booking Time</string>
+    <string name="select_booking_date">Select Booking Date</string>
+    <string name="select_address_proof">Select Address Proof</string>
+    <string name="address_proof_details">Enter Address Proof Details</string>
+    <string name="attach_documents">Attach ID Proof Documents</string>
+    <string name="attach_address_proof_documents">Upload Address Proof Documents :</string>
+    <string name="select_id_proof">Select ID Proof</string>
+    <string name="enter_id_proof_details">Enter ID Proof Details</string>
+    <string name="upload_address_Proof">Upload Address Proof Photographer</string>
+    <string name="other_documents">Other Documents</string>
+    <string name="edit">Edit</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="demo"><u>Demo Application Form </u></string>
+
+    <!--Pending Challan-->
+    <string name="captcha_note">Note : Please Click on Resend Button, if Captcha not Displayed.</string>
+    <string name="vehicle_heading_txt">Vehicle Details </string>
+    <string name="owner_txt">Owner Name	</string>
+    <string name="vehicleNo_txt">Vehicle No </string>
+    <string name="Totalamount_txt">Pending Amount </string><!-- \u20B9 -->
+    <string name="note_txt">* Note : Click On Particular Challan for more Details.</string>
+    <string name="mobile">Mobile :</string>
+    <string name="vehicle_detail_txt">Vehicle Details</string>
+    <string name="dl_txt">DL No </string>
+    <string name="challan_detail">Challan Details</string>
+    <string name="echallan_no_txt">Challan No</string>
+    <string name="UNIT_CODE">Unit Code</string>
+    <string name="unit_name">Unit Name</string>
+    <string name="myAlphaNumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+
+
+    <string name="sharing_text">Your sharing text goes here…</string>
+    <string name="share_title">Share Screenshot</string>
+    <string name="screenshot_take_failed">Failed to take screenshot!!</string>
+    <string name="wait">Please wait…</string>
+    <string name="full_page_screenshot">Full Page Screenshot</string>
+    <string name="hidden_text">Hidden Text</string>
+    <string name="custom_page_screenshot">Custom Page Screenshot</string>
+
+
+    <string name="txt_title">GOVERNMENT OF TELANGANA POLICE DEPARTMENT </string>
+    <string name="txt_subtitle">Office of the Commissioner of Police
+Cyberabad, Hyderabad
+</string>
+
+    <string name="txt_subleftitle">No. 21/DCP-Tr/Cyb/2014 </string>
+    <string name="txt_date">Date:10.02.2014</string>
+    <string name="txt_subtitle_notification">N O T I F I C A T I O N</string>
+    <string name="txt_suloo">It has been observed that a large number Cabs operating in Cyberabad jurisdiction are operating in an unsafe and haphazard manner without adequate documents and unlicensed drivers. It is also found that drivers of these contract carriages are misbehaving with passengers, charging undue fees and also indulging in aiding unlawful activities. Many of these vehicles are also affecting road safety and security by parking in dangerous places, driving rashly and creating other forms of nuisance. Therefore to ensure that such vehicles operate in an orderly manner and do not compromise public and road safety, in exercise of the powers conferred upon me under section 7 Clause (1) of Cyberabad City Police Act No. 2 of 2004 r/w Section 21 Clause (1) (b) of Hyderabad City Police Act 1348-F, I, Commissioner of Police, Cyberabad do here by notify for the information of general public that
+
+            I. All the drivers of above vehicles will have to be registered themselves with Cyberabad Traffic Police in the manner prescribed below.
+a. All the owners/drivers who are desirous of operating in the jurisdiction of Cyberabad Commissionerate will have to apply for registration of the drivers in the format given in Form CR 2 and CR 2 A of this notification along with valid documents given thereof.
+b. They will have to provide proof of identification and address as specified in Annexure – I.
+ c. They will have to carry the QR coded card / display as issued and place it in a place visible to the passengers sitting in the rear seat at all times.
+d. This registration will be valid for a period of one year or validity of documents whichever is earliest. On expiry they have to apply for renewal.
+No charges will be charged for the permission. However a nominal fee for preparing the ID Card / Sticker / Name Card may be charged during registration / renewal if required as ordered by Commissioner of Police, Cyberabad.
+ Hired vehicles which violate these rules will be liable for action under Cyberabad Police Act and relevant provision of the IPC and M.V. Act.
+The application process will be start from 01-03-2014. These rules come into force from 01-05-2014.
+Sd/-
+</string>
+<string name="txt_supargra">Commissioner of Police, Cyberabad. </string>
+    <string name="txt_annexure">ANNEXURE – I</string>
+    
+    <string name="txt_request">The mandatory requirements for Registration / Renewal:
+For Drivers:
+</string>
+
+    <string name="txt_med">Self attested copies of –: </string>
+
+    <string name="txt_list">
+
+ii)	Aadhar Card
+iii)Passport Size Photos
+iv)	Proof of address
+ 	- LPG Gas Bill (Recent) or
+    - Passport or
+    - Pan Card or
+    - Bank Passbook.
+</string>
+
+    <string name="driving_license">i)	Driving License</string>
+    <string name="aadhar_card">ii)	Aadhar Card</string>
+    <string name="driv_paaport_photos">iii)Passport Size Photos</string>
+    <string name="driv_address_proof">iv)	Proof of address</string>
+
+    <string name="lpg_gas">- LPG Gas Bill (Recent) or</string>
+    <string name="passport">- Passport or</string>
+    <string name="pancard">- Pan Card or</string>
+    <string name="bank_passbook">- Bank Passbook.</string>
+</resources>

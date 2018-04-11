@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+       layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_footer"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/myLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_2dp"
+                android:padding="@dimen/margin_1dp"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_image_size_ll"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:visibility="visible" />
+
+                <!--margin_image_size_ll-->
+
+                <ImageView
+                    android:id="@+id/btn_logout"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/image_slider"
+                    android:src="@drawable/exit"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:id="@+id/slot_booking"
+                    android:layout_width="@dimen/margin_icon_size"
+                    android:layout_height="@dimen/margin_icon_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/regn_slot" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/driver_application_form"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5">
+                    <ImageView
+                        android:id="@+id/slot_edit"
+                        android:layout_width="@dimen/margin_icon_size"
+                        android:layout_height="@dimen/margin_icon_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/edit_slot" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/driver_application_edit"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/btn_status"
+                        android:layout_width="@dimen/margin_icon_size"
+                        android:layout_height="@dimen/margin_icon_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/status" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/driver_application_status"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5">
+
+                    <ImageView
+                        android:id="@+id/bt_pending"
+                        android:layout_width="@dimen/margin_icon_size"
+                        android:layout_height="@dimen/margin_icon_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/helpicon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/driver_application_pending"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+                </TableRow>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

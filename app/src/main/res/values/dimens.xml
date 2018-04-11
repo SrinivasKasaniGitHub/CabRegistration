@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_icon">110dp</dimen>
+
+    <dimen name="dash_board_header_size">60dp</dimen>
+
+    <dimen name="heading_text_size">18dp</dimen>
+    <dimen name="margin_footer">30dp</dimen>
+    <dimen name="margin_cyblog_with">50dp</dimen>
+    <dimen name="margin_cyblog_hight">50dp</dimen>
+    <dimen name="margin_card_height">50dp</dimen>
+    <dimen name="margin_view">8dp</dimen>
+    <dimen name="margin_Top_view">5dp</dimen>
+    <dimen name="margin_emp_img_size">80dp</dimen>
+
+    <dimen name="margin_Top">8dp</dimen>
+    <dimen name="margin_textsize">18dp</dimen>
+    <dimen name="margin_textsize_16dp">16dp</dimen>
+    <dimen name="margin_textsize_14dp">14dp</dimen>
+    <dimen name="padding_allside">10dp</dimen>
+    <dimen name="margin_allside">6dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_Edittextsize">14dp</dimen>
+    <dimen name="margin_img_calder">50dp</dimen>
+    <dimen name="margin_img_calderheight">42dp</dimen>
+    <dimen name="driver_image_size">60dp</dimen>
+    <dimen name="margin_image_size_ll">200dp</dimen>
+    <dimen name="margin_icon_size">70dp</dimen>
+
+
+
+    <dimen name="margin_250dp">250dp</dimen>
+    <dimen name="margin_200dp">200dp</dimen>
+    <dimen name="margin_100dp">100dp</dimen>
+    <dimen name="margin_115dp">115dp</dimen>
+    <dimen name="margin_90dp">90dp</dimen>
+
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_18dp">18dp</dimen>
+    <dimen name="text_size_dp">16dp</dimen>
+    <dimen name="margin_fifteen">15dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+    <dimen name="margin_text_10dp">10dp</dimen>
+
+    <dimen name="margin_5dp">5dp</dimen>
+
+    <dimen name="margin_2dp">2dp</dimen>
+    <dimen name="margin_1dp">1dp</dimen>
+
+
+</resources>
